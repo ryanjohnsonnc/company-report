@@ -1,0 +1,16 @@
+#overview {
+  position: relative;
+
+  &:before {
+    content:'';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 40px;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-image: url('/assets/img/hero-bg.jpg');
+  }
+}

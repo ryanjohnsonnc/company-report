@@ -1,0 +1,158 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+/** 
+ * A general max-width wrapper for the thinner sections
+ */ 
+ .width--thin {
+  max-width: $width-thin;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=458146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.white {
+  color: white;
+}
+
+.bg--white {
+  background-color: white;
+}
+
+.bg--offwhite {
+  background-color: $off-white;
+}
+
+.blue {
+ color: $blue !important;
+}
+
+.bg--blue {
+  background-color: $blue;
+}
+
+.yellow {
+  color: $yellow !important;
+ }
+ 
+.bg--yellow {
+  background-color: $yellow;
+}
+
+ .red {
+  color: $red !important;
+ }
+ 
+ .bg--red {
+  background-color: $red;
+ }
+
+
+/**
+ * Give padding or margin to the top and bottom of things
+ */
+ 
+.pad--vertical {
+  padding-top: $global-padding * 8 !important;
+  padding-bottom: $global-padding * 8 !important;
+}
+ 
+.pad--top {
+  padding-top: $global-padding * 8 !important;
+}
+
+.pad--top-half {
+  padding-top: $global-padding * 4 !important;
+}
+
+
+.pad--bottom {
+  padding-bottom: $global-padding * 8 !important;
+}
+
+.pad--bottom-half {
+  padding-bottom: $global-padding * 4 !important;
+}
+
+.pad--bottom-small {
+  padding-bottom: $global-padding * 2 !important;
+}
+
+.pad--half {
+  padding-top: $global-padding * 4 !important;
+  padding-bottom: $global-padding * 4 !important;
+}
+
+.margin--vertical {
+  margin-top: $global-margin * 8 !important;
+  margin-bottom: $global-margin * 8 !important;
+}
+
+.margin--top {
+  margin-top: $global-margin * 8 !important;
+}
+
+.margin--top-half {
+  margin-top: $global-margin * 4 !important;
+}
+
+.margin--top-small {
+  margin-top: $global-margin * 2 !important;
+}
+
+.margin--bottom {
+  margin-bottom: $global-margin * 8 !important;
+}
+
+.margin--bottom-half {
+  margin-bottom: $global-margin * 4 !important;
+}
+
+.margin--bottom-small {
+  margin-bottom: $global-margin * 2 !important;
+}
+
+.margin--half {
+  margin-top: $global-margin * 4 !important;
+  margin-bottom: $global-margin * 4 !important;
+}
+
+

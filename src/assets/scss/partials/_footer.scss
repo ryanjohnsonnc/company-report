@@ -1,0 +1,44 @@
+#footer {
+  background-image: url('/assets/img/footer-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.footer_header {
+  @include breakpoint(medium) {
+    text-align: right;
+  }
+}
+
+.footer_logo {
+  display: block;
+  width: 140px;
+}
+
+.footer_content{
+  p {
+    font-size: rem-calc(14);
+  
+    &.label {
+      font-size: rem-calc(18);
+    }
+  }
+}
+
+.copyright {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background-color: rgba(31, 31, 31, .4);
+  color: white;
+  a {
+    color: white;
+    font-weight: 700;
+  }
+
+  .text-right-md {
+    @include breakpoint(medium) {
+      text-align: right;
+    }
+  }
+}

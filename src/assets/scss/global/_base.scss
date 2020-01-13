@@ -1,0 +1,16 @@
+header.section {
+  .description + h2 {
+
+  }
+  .description {
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+}

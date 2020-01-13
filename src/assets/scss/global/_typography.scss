@@ -1,0 +1,54 @@
+h1 {
+  color: $gray;
+  font-size: rem-calc(50);
+  font-weight: 700;
+  @include breakpoint(medium) {
+    font-size: rem-calc(72);
+  }
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-weight: 700; 
+}
+
+.label {
+  text-transform: uppercase;
+  font-family: $header-font-family;
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: rem-calc(18);
+}
+
+p {
+  &.description {
+    font-family: $roboto-slab;
+    font-weight: 300;
+    color: $gray;
+    font-size: rem-calc(28);
+    @include breakpoint(medium) {
+      font-size: rem-calc(36);
+    }
+  }
+
+  &.callout {
+    font-family: $roboto-slab;
+    color: $gray !important;
+    border-width: 0px;
+    font-size: rem-calc(28);
+    border-top: 8px solid $yellow;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    &.red {
+      border-top-color: $red;
+    }
+  }
+}

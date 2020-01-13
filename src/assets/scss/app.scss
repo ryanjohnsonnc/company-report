@@ -62,3 +62,21 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+@import 'global/base';
+@import 'vendor/animate';
+@import 'utils/mixins';
+@import 'global/typography';
+@import 'global/forms';
+@import 'components/buttons';
+@import 'utils/helpers';
+
+//Components
+@import 'partials/footer';
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/table-of-content';
+@import 'partials/letter';
+@import 'partials/overview';
+@import 'partials/backers';

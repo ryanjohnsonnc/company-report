@@ -1,0 +1,85 @@
+.table_image-container {
+  position: relative;
+  .table_image {
+    position: absolute;
+    top: 0px;
+    left: -300px;
+    right: 0px;
+    bottom: 0px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('/assets/img/table-bg.jpg');
+  }
+}
+
+// Items in the table of contents
+.content_items {
+  .item {
+    position: relative;
+    border-top: 4px solid $blue;
+    padding-top: $global-spacing * 1;
+    padding-bottom: $global-spacing * 1;
+    margin-bottom: $global-spacing;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include transition(all .3s ease);
+
+    .link {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+    }
+
+    &:hover {
+      background-color: $blue;
+      p {
+        color: white;
+      }
+    }
+
+    &:nth-of-type(2) {
+      border-color: $yellow;
+      &:hover {
+        background-color: $yellow;
+      }
+    }
+
+    &:nth-of-type(3) {
+      border-color: $red;
+      &:hover {
+        background-color: $red;
+      }
+    }
+
+    &:nth-of-type(4) {
+      border-color: $light-blue;
+      &:hover {
+        background-color: $light-blue;
+      }
+    }
+
+    &:nth-of-type(5) {
+      margin-bottom: 0px !important;
+      border-color: $purple;
+      &:hover {
+        background-color: $purple;
+      }
+    }
+
+    &:nth-of-type(6) {
+      margin-bottom: 0px !important;
+      border-color: $green;
+      &:hover {
+        background-color: $green;
+      }
+    }
+
+    p {
+      color: $gray;
+      font-size: rem-calc(22);
+      @include transition(all .3s ease);
+    }
+  }
+}
