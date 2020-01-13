@@ -77,13 +77,21 @@
   background-color: $yellow;
 }
 
- .red {
+.red {
   color: $red !important;
- }
+}
  
- .bg--red {
+.bg--red {
   background-color: $red;
- }
+}
+
+.light-blue {
+  color: $light-blue !important;
+}
+
+.bg--light-blue {
+  background-color: $light-blue;
+}
 
 
 /**

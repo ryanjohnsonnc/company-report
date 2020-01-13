@@ -21,6 +21,12 @@ h2 {
 }
 
 p {
+  &.alternate {
+    font-family: $roboto-slab;
+    font-weight: 300;
+    color: $gray;
+    font-size: rem-calc(30);
+  }
   &.description {
     font-family: $roboto-slab;
     font-weight: 300;
@@ -49,6 +55,10 @@ p {
 
     &.red {
       border-top-color: $red;
+    }
+
+    &.light-blue {
+      border-top-color: $light-blue;
     }
   }
 }

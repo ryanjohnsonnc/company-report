@@ -2,9 +2,15 @@
   position: relative;
 
   &:before {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    z-index: 3;
+    top: 0px;
     content:'';
     display: block;
-    position: absolute;
     left: 0px;
     top: 0px;
     height: 40px;

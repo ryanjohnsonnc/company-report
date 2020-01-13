@@ -1,14 +1,14 @@
-#overview {
+#model {
   position: relative;
 
-  &:before {    
+  &:before {
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
     position: sticky;
-    top: 0px;
     z-index: 3;
+    top: 0px;
     content:'';
     display: block;
     left: 0px;
@@ -16,7 +16,7 @@
     height: 40px;
     width: 100%;
     background-size: cover;
-    background-position: top center;
-    background-image: url('/assets/img/hero-bg.jpg');
+    background-position: center 72%;
+    background-image: url('/assets/img/table-bg.jpg');
   }
 }
