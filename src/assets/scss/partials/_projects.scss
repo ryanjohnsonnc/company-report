@@ -1,0 +1,22 @@
+#projects {
+  position: relative;
+
+  &:before {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    z-index: 3;
+    top: 0px;
+    content:'';
+    display: block;
+    left: 0px;
+    top: 0px;
+    height: 40px;
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url('/assets/img/table-bg.jpg');
+  }
+}
