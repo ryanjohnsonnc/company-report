@@ -198,12 +198,13 @@
 // Text Columns
 @mixin content-columns($columnCount, $columnGap: 20px) {
   -webkit-column-count: $columnCount;
-     -moz-column-count: $columnCount;
+    -moz-column-count: $columnCount;
           column-count: $columnCount;
   -webkit-column-gap: $columnGap;
-     -moz-column-gap: $columnGap;
+    -moz-column-gap: $columnGap;
           column-gap: $columnGap;
 }
+
 
 // Default Border Radius to soften edges
 @mixin default-border($radius: 4px) {

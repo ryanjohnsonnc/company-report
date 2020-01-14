@@ -12,6 +12,15 @@
 }
 
 /**
+ * Content Columns Class
+ */
+.text-columns {
+  @include breakpoint(medium) {
+    @include content-columns(2)
+  }
+} 
+
+/**
  * Clear inner floats
  */
 .clearfix::after {
@@ -146,6 +155,10 @@
   margin-top: $global-margin * 2 !important;
 }
 
+.margin--bottom-none {
+  margin-bottom: $global-margin * 0 !important;
+}
+
 .margin--bottom {
   margin-bottom: $global-margin * 8 !important;
 }
@@ -163,4 +176,7 @@
   margin-bottom: $global-margin * 4 !important;
 }
 
+.margin--right-small {
+  margin-right: $global-margin * 1 !important;
+}
 

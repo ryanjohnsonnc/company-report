@@ -8,10 +8,12 @@ import 'what-input';
 // have the hoisting behavior.
 window.jQuery = $;
 require('foundation-sites');
+require('./lib/dots');
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
-//import './lib/foundation-explicit-pieces';
+//import easyScrollDots from './lib/dots';
 
 
 $(document).foundation();
+
