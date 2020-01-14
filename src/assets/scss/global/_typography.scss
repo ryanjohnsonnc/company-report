@@ -60,5 +60,13 @@ p {
     &.light-blue {
       border-top-color: $light-blue;
     }
+
+    &.purple {
+      border-top-color: $purple;
+    }
+
+    &.green {
+      border-top-color: $green;
+    }
   }
 }
