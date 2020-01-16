@@ -39,4 +39,29 @@
       background-color: $yellow;
     }
   }
+
+  .hero_links {
+    .logo {
+      display: inline-block;
+      max-width: 600px;
+      width: 100%;
+      vertical-align: middle;
+      margin-bottom: $global-spacing * 1.5;
+
+      img {
+        max-width: 250px;
+      }
+
+      @include breakpoint(large) {
+        margin-bottom: 0px;
+        width: 50%;
+      }
+    }
+
+    .button {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0px;
+    }
+  }
 }
