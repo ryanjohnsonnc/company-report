@@ -1,47 +1,55 @@
 /* SIDEBAR NAVIGATION */
 .sidebar {
+  display: none;
   position:absolute; 
   left:0;
+  @include breakpoint(medium) {
+    display: block;
+    z-index: 88;
+  }
 }
 .dot {
   display:inline-block; 
-  width:16px; 
-  height:16px; 
-  background-color:$light-gray; 
-  border-radius:8px; 
+  border-radius:0; 
+  padding: 12px;
   z-index:999; 
-  content:''; 
-  color:transparent; 
+  z-index: 1;
+  color:$gray; 
   font-size:14px; 
   line-height:10px; 
   vertical-align:middle; 
-  margin:5px 0 5px 0; 
-  font-weight:300;
+  margin:0px 0 0px 0; 
+  font-weight:600;
+  @include transition(all .3s ease);
 
   &:hover {
-    background-color:$primary-color; 
-    color: $primary-color;
+    //background-color:$primary-color; 
+    color: white;
+
+    &:after {
+      width: 100%;
+    }
   }
 
   span {
-    margin:0px 0px 20px 15px; 
     position:relative; 
-    top:2px; 
-    left:10px;
+    z-index: 3;
     white-space: nowrap;
   }
 }
 
 nav {
-  width:100px; 
-  height:200px; 
-  padding:0 0px; 
+  width:auto; 
+  height:auto; 
+  padding:0px 0px; 
   position:fixed; 
+
   top:50%; 
   left:20px; 
   transform: translate(0, -50%); 
-  z-index: 10000; 
+  z-index: 888; 
   text-align:left;
+  background-color: white;
 
   ul  {
     list-style-type:none; 
@@ -49,15 +57,76 @@ nav {
     padding:0;
 
     li  {
+      position: relative;
+
       a {
+        width: 100%;
         color:rgba(255,255,255,.8);
         text-decoration:none;
         text-align: left;
+        font-weight: 500;
+        
+        &:after {
+          content:'';
+          display: block;
+          position: absolute;
+          z-index: 0;
+          background-color: $primary-color; 
+          left: 0px;
+          top: 0px;
+          width: 0px;
+          bottom: 0px;
+          @include transition(all .3s ease);
+        }
 
         &.name-active {
-          color:$primary-color; 
-          background-color:$primary-color; 
-          text-align:left;
+          color: white; 
+
+          &:after {
+            width: 100%;
+          }
+        }
+
+        &.home {
+          &:after {
+            background-color: $green;
+          }
+        }
+
+        &.table {
+          &:after {
+            background-color: $gray; 
+          }
+        }
+
+        &.overview {
+          &:after {
+            background-color: $yellow !important;
+          }
+        }
+
+        &.backers {
+          &:after {
+            background-color: $red !important;
+          }
+        }
+
+        &.model {
+          &:after {
+            background-color: $light-blue !important;
+          }
+        }
+
+        &.projects {
+          &:after {
+            background-color: $purple !important;
+          }
+        }
+
+        &.fund {
+          &:after {
+            background-color: $green !important;
+          }
         }
       }
     }

@@ -1,9 +1,16 @@
 #hero {
+  position: relative;
+  z-index: 99;
   background-size: cover;
   background-position: top center;
   background-image: url('/assets/img/hero-bg.jpg');
-  padding-top: 100px;
-  padding-bottom: 100px; //remove when the image get there
+
+
+  .grid-x {
+    padding-top: 100px;
+    padding-bottom: 100px; //remove when the image get there
+    min-height: 100vh;
+  }
 }
 
 .hero_content {
