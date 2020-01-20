@@ -65,3 +65,15 @@
     }
   }
 }
+
+
+// Arrow Down
+
+.arrow--down {
+  @include css-triangle(bottom, $off-white, 35px, 70px);
+  bottom: 0;
+  left: 50%;
+  margin-left: -35px;
+  position: absolute;
+  @include rotate(180);
+}
