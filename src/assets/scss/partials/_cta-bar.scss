@@ -1,0 +1,21 @@
+.cta-bar {
+  position: fixed;
+  z-index: 3;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: white;
+  padding:12px;
+  //border-top: 4px solid $blue;
+
+  .logo {
+    display: inline-block;
+    width: 180px;
+    margin-right: 32px;
+  }
+
+  .button {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+}

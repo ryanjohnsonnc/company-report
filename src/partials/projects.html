@@ -21,20 +21,33 @@
         </p>
       </div>
 
-      <div class="cell medium-12 margin--bottom">
+      <div class="cell medium-12 large-6 margin--bottom">
         <p class="callout purple">
           <span class="label purple">Graphic 4</span>
           Allocation of funds to issue areas and projects from 2013-2018
         </p>
-        <img class="margin--top-small" src="/assets/img/projects-graph.svg"/>
+        <a href="#" data-open="projectsOneModal"><img class="margin--top-small" src="/assets/img/projects-graph.svg"/></a>
       </div>
 
-      <div class="cell medium-12 margin--bottom-small">
+      <div class="reveal large" id="projectsOneModal" data-reveal>
+        <img class="" src="/assets/img/projects-graph.svg"/>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="cell medium-12 large-6 margin--bottom-small">
         <p class="callout purple">
           <span class="label purple">Table 1</span>
           Allocation of funds across regions from 2013-2018
         </p>
-        <img class="margin--top-small" src="/assets/img/projects-table.svg"/>
+        <a href="#" data-open="projectsTwoModal"><img class="margin--top-small" src="/assets/img/projects-table.svg"/></a>
+      </div>
+      <div class="reveal large" id="projectsTwoModal" data-reveal>
+        <img class="" src="/assets/img/projects-table.svg"/>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
          
     </div>
